@@ -649,6 +649,13 @@ div.brand-txt>p>span{
 	font-size: 0.9em !important;
 	font-weight: normal !important;
 }
+.town-text2 {
+	color: #111 !important;
+	font-family: arial !important;
+	font-size: 0.9em !important;
+	font-weight: normal !important;
+	padding-left: 20px !important;
+}
 
 .list-page-accordian-block {
 	width: 8%;
@@ -1028,6 +1035,10 @@ input:-ms-input-placeholder {
 
 .panel-custom-fl-srch>.panel-collapse>.panel-body{
 	background-color: #fdebba;
+}
+
+.inline_textbox{
+	width: 100px;
 }
 
 /* media queries */
