@@ -121,5 +121,15 @@ $(document).ready(function(){
 			 });
 		  }
 		          
+		$('#myCollapsible').collapse({
+		  toggle: false
+		});
+		
+		$('.panel-heading-nn-collpse a').on('click',function(e){
+		    if($(this).parents('.panel').children('.panel-collapse').hasClass('in')){
+		        e.preventDefault();
+		        e.stopPropagation();
+		    }
+		});
 		
 });
