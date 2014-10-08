@@ -6,6 +6,7 @@
 		<!-- link css -->
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 		<link rel="stylesheet" href="css/bootstrap.css.map" type="text/css" />
+		<link rel="stylesheet" href="datepicker/css/datepicker.css" type="text/css" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -167,8 +168,7 @@
 			  <div class="panel panel-default panel-custom-fl-srch">
 			    <div class="panel-heading panel-heading-nn-collpse">
 			      <h4 class="panel-title">
-			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm" href="#collapse1">
-			          <span class="town-btn text-center SeeMore2" id="town-tgl">+</span>
+			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm1" href="#collapse1">
 			          <span>Town</span>
 			        </a>
 			      </h4>
@@ -209,7 +209,7 @@
 							  </div>
 						</div>
 						<div class="col-sm-2 accordian-text">
-							<div class="checkbox coustom-checkbox">
+							 <div class="checkbox coustom-checkbox">
 							    <label class="town-text2"> 
 							      <input type="checkbox" id="bridge-hampton-area">BRIDGEHAMPTON AREA
 							    </label>
@@ -367,7 +367,183 @@
 			    </div>
 			    <div id="collapse2" class="panel-collapse collapse in">
 			      <div class="panel-body">
-			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			        <div class="row">
+			      		<div class="col-sm-3 accordian-text">
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="all">Sale
+							    </label>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Sale Price From: </label>
+							    <input type="text" name="salepricrefrom" class="inline_textbox"/>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Sf : </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Uses:</label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="exclusive">Agric. Reserve
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="co-brokes">Bar Night Club
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="open">Business
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="open">Horse Farm
+							     </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="all">Lease
+							    </label>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Sale Price To: </label>
+							    <input type="text" name="salepricrefrom" class="inline_textbox"/>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Acreage : </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="exclusive">Hotel/Motel
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="co-brokes">Industrial
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="open">Inn/B&times;B
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="open">Marina
+							    </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="all">Both
+							    </label>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Lease Price From: </label>
+							    <input type="text" name="salepricrefrom" class="inline_textbox"/>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Waterfront/View : </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="exclusive">Multiple Dwellings
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="co-brokes">Office
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="open">Restaurant
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="open">Retail
+							    </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+							<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <!-- <input type="checkbox" name="all">Lease -->
+							    </label>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Lease Price To: </label>
+							    <input type="text" name="salepricrefrom" class="inline_textbox"/>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="sign_posted">South of Highway
+						    </label>
+						   </div>
+						  <div class="coustom-checkbox">
+						    <label class="town-text2"> </label>
+						  </div>
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="sign_posted">Vineyard
+						    </label>
+						   </div>
+						   <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="sign_posted">Winery
+						    </label>
+						   </div>
+						   <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="sign_posted">OTHER
+						    </label>
+						   </div>
+						</div>
+			      	</div>
+			      	<div class="form-group">
+			      		<label class="col-sm-3 control-label-cust">Keywords</label>
+			      		<div class="col-sm-5">
+			      			<textarea class="form-control" rows="3"></textarea>
+			      		</div>
+			      	</div>
 			      </div>
 			    </div>
 			  </div>
@@ -404,6 +580,7 @@
 							  <div class="checkbox coustom-checkbox checkbox-indent">
 							    <label class="town-text2">
 							      <input type="checkbox" name="co-brokes">Co-Brokes
+							    </label>
 							  </div>
 							  <div class="checkbox coustom-checkbox checkbox-indent">
 							    <label class="town-text2">
@@ -428,6 +605,7 @@
 							  <div class="checkbox coustom-checkbox checkbox-indent">
 							    <label class="town-text2">
 							      <input type="checkbox" name="sold">Sold
+							    </label>
 							  </div>
 						</div>
 						
@@ -444,11 +622,12 @@
 							  </div>
 							  <div class="coustom-checkbox">
 							    <label class="town-text2"> Added Since:</label>
-							    <input type="text" name="cobrokeagency" class="inline_textbox"/>
+							    <input type="text" name="cobrokeagency" class="inline_textbox clndr-datepick"/>
 							  </div>
 							  <div class="checkbox coustom-checkbox checkbox-indent">
 							    <label class="town-text2">
 							      <input type="checkbox" name="price">Price or Status Chages Only
+							    </label>
 							  </div>
 						</div>
 						
@@ -465,11 +644,12 @@
 							  </div>
 							  <div class="coustom-checkbox">
 							    <label class="town-text2"> Edited Since:</label>
-							    <input type="text" name="cobrokeagency" class="inline_textbox"/>
+							    <input type="text" name="cobrokeagency" class="inline_textbox clndr-datepick"/>
 							  </div>
 							  <div class="checkbox coustom-checkbox checkbox-indent">
 							    <label class="town-text2">
 							      <input type="checkbox" name="sign_posted">Sign Posted
+							    </label>
 							  </div>
 						</div>
 			      	</div>
@@ -482,14 +662,14 @@
 			
 			<div class="panel-group" id="myCollapsiblecomm4">
 			  <div class="panel panel-default panel-custom-fl-srch">
-			    <div class="panel-heading panel-heading-nn-collpse">
+			    <div class="panel-heading">
 			      <h4 class="panel-title">
 			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm4" href="#collapse4">
 			          General Details
 			        </a>
 			      </h4>
 			    </div>
-			    <div id="collapse4" class="panel-collapse collapse">
+			    <div id="collapse4" class="panel-collapse collapse in">
 			      <div class="panel-body">
 			      	<div class="row">
 			      		<div class="col-sm-2 accordian-text">
@@ -564,7 +744,7 @@
 			        </a>
 			      </h4>
 			    </div>
-			    <div id="collapse5" class="panel-collapse collapse">
+			    <div id="collapse5" class="panel-collapse collapse in">
 			      <div class="panel-body">
 			      	 <div class="row">
 			      		<div class="col-sm-2 accordian-text">
@@ -636,7 +816,48 @@
 			    </div>
 			    <div id="collapse6" class="panel-collapse collapse in">
 			      <div class="panel-body">
-			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			        <div class="row">
+			      		<div class="col-sm-3 accordian-text">
+						  <div class="coustom-checkbox">
+						    <label class="town-text2"> Sort By:</label>
+						    <select class="town-text2">
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    </select>
+						  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Save This Search
+						    </label>
+						  </div>
+						</div>
+						<div class="col-sm-3 accordian-text">
+							<div class="coustom-checkbox">
+							    <label class="town-text2"> Result Type:</label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="all">Thumbnail
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="exclusive">List
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="co-brokes">Full Listing
+							    </label>
+							  </div>
+						</div>
+			      	</div>
 			      </div>
 			    </div>
 			  </div>
@@ -659,6 +880,7 @@
 		<!-- link js -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<script src="datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="js/custom.js"></script>
 		
 	</body>

@@ -1041,6 +1041,16 @@ input:-ms-input-placeholder {
 	width: 100px;
 }
 
+.dashboard-menu-dash{
+	width: 19.6%;
+}
+
+.control-label-cust{
+	text-align: right;
+	padding: 0;
+	margin-top: 5px;
+}
+
 /* media queries */
 
 @media(min-width: 992px) and (max-width: 1200px){
