@@ -101,6 +101,16 @@ $(document).ready(function(){
 	  }
 	 });
 	 
+	 $(document).on('click', '#summer_period', function(){
+	  if(this.checked == true){
+	   $('.chk-bx-summer').prop('checked', true);
+	  }
+	  else
+	  {
+	   $('.chk-bx-summer').prop('checked', false);
+	  }
+	 });
+	 
 	 // change content of town area collapsible on click
 		$('.SeeMore2').click(function(){
 			var $this = $(this);

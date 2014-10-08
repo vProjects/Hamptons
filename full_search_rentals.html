@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- link css -->
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.css.map" type="text/css" />
+		<link rel="stylesheet" href="datepicker/css/datepicker.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+	    <!--[if lt IE 9]>
+	
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	
+	    <![endif]-->
+		
+		<title>
+			Hamptons Real Time
+		</title>
+		
+	</head>
+	<body class="body-back">
+		
+		<!-- navigation bar -->
+		
+		<nav class="navbar navbar-default navbar-custom" role="navigation">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand navbar-brand-custom" href="index.html">
+		      	<img src="images/logo.png" alt="Logo" class="brand-img" />
+		      </a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav realtime">
+		      	<a href="index.html"><div class="brand-txt">
+		      		<h1><span>H</span>amptons <span>R</span>eal<b class="timetext">T</b>ime</h1>
+		      		<p><span>T</span>he <span>C</span>omplete <span>R</span>eal <span>E</span>state <span>S</span>ource</p>
+		      	</div></a>		      	
+		      </ul>
+		      <ul class="nav navbar-nav">
+		      	<div class="saunders">
+		      		<img src="images/190_med_logo.gif" alt="saunders" class="img-responsive center-block" />
+		      	</div>		      	
+		      </ul>
+		      
+		      
+		       <ul class="nav navbar-nav navbar-right nav-coustom-saunders">
+		        <a href="#" class="text-right right-link welcome-text">help@hamptonsrealtime.com</a>
+		        <a href="#" class="text-right right-link">631-287-8666</a>
+		        <a href="#" class="text-right right-link">Log Out</a>
+		        <div class="go-block pull-right hidden-xs">
+		        	<input type="text" class="pull-left folio-text" placeholder="Folio,Web,Address,Name">
+		        	<a href="#" class="pull-right go-btn text-center">Go</a>
+		        	<div class="clearfix"></div>
+		        </div>
+		        <div class="clearfix"></div>
+		     </ul> 
+		      
+		    </div><!-- /.navbar-collapse -->
+		    <div class="go-block pull-right visible-xs">
+	        	<p class="pull-left folio-text">Folio,Web,Address,Name</p>
+	        	<a href="#" class="pull-right go-btn text-center">Go</a>
+	        	<div class="clearfix"></div>
+		    </div>
+		    <p class="text-center">Welcome Username</p>
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12" id="second-col">
+					<nav class="navbar navbar-default coustom-nav" id="rt-nav-dash">
+						<div class="dashboard-menu pull-left right-nav">
+							<a href="#">HOME</a>
+						</div>							
+						<div class="dashboard-menu pull-left right-nav">
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown">SEARCH <span class="caret"></span></a>
+					          <ul class="dropdown-menu coustom-dropdown-menu" role="menu">
+					            <li class="dropdown-submenu">
+					                <a tabindex="-1" href="#">Homes</a>
+					                <ul class="dropdown-menu">
+					                  <li><a tabindex="-1" href="#">Full</a></li>
+					                  <li><a tabindex="-1" href="#">Simple</a></li>
+					                </ul>
+					             </li>
+					            <li class="dropdown-submenu">
+					                <a tabindex="-1" href="#">Rental</a>
+					                <ul class="dropdown-menu">
+					                  <li><a tabindex="-1" href="#">Full</a></li>
+					                  <li><a tabindex="-1" href="#">Simple</a></li>
+					                </ul>
+					             </li>
+					            <li class="dropdown-submenu">
+					                <a tabindex="-1" href="#">Land</a>
+					                <ul class="dropdown-menu">
+					                  <li><a tabindex="-1" href="#">Full</a></li>
+					                  <li><a tabindex="-1" href="#">Simple</a></li>
+					                </ul>
+					             </li>
+					            <li class="divider"></li>
+					            <li class="dropdown-submenu">
+					                <a tabindex="-1" href="#">Commercial</a>
+					                <ul class="dropdown-menu">
+					                  <li><a tabindex="-1" href="#">Full</a></li>
+					                  <li><a tabindex="-1" href="#">Simple</a></li>
+					                </ul>
+					             </li>
+					            <li class="divider"></li>
+					            <li><a href="#">Holding Station</a></li>
+					            <li><a href="#">Daysheet</a></li>
+					            <li><a href="#">Open Houses</a></li>
+					          </ul>
+					        </li>
+						</div>
+						<div class="dashboard-menu pull-left right-nav">
+							<a href="#">EMAIL</a>
+						</div>	
+						<div class="dashboard-menu pull-left right-nav">
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown">MY REALTIME <span class="caret"></span></a>
+					          <ul class="dropdown-menu coustom-dropdown-menu" role="menu">
+					            <li class="dropdown-submenu">
+					                <a tabindex="-1" href="#">Add New Listing</a>
+					                <ul class="dropdown-menu">
+					                  <li><a tabindex="-1" href="#">Sale/Rental</a></li>
+					                  <li><a tabindex="-1" href="#">Land</a></li>
+					                  <li><a tabindex="-1" href="#">Commercial</a></li>
+					                </ul>
+					             </li>
+					            <li><a href="#">My Saved Listings</a></li>
+					            <li><a href="#">My Saved Searches</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">My Clients</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">My Customers</a></li>
+					            <li><a href="#">HamptonsRealTime.com</a></li>
+					            <li><a href="#">Admin</a></li>
+					          </ul>
+					        </li>
+						</div>	
+						<div class="dashboard-menu pull-left right-nav">
+							<a href="#">DOCUMENTS</a>
+						</div>	
+						<div class="dashboard-menu pull-left right-nav">
+							<a href="#">EXPENSES</a>
+						</div>									
+					</nav>
+				</div>
+			</div>
+			
+			<!-- first collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm1">
+			  <div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading panel-heading-nn-collpse">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm1" href="#collapse1">
+			          <span>Towns</span>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse1" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			        <div class="row">
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox" id="east-hampton-area">EAST HAMPTON AREA
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-all" name="monauk">Montauk
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-all" name="amagansett">Amagansett
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-all" name="east-hampton">East Hampton
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-all" name="east-hampon-vill">East Hampton Village
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-all" name="wainscott">Wainscott
+							    </label>
+							  </div>
+						</div>
+						<div class="col-sm-2 accordian-text">
+							 <div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox" id="bridge-hampton-area">BRIDGEHAMPTON AREA
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-bridge">Bridgehampton
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox"  class="chk-bx-bridge">Sagaponack
+							    </label>
+							  </div>			
+						</div>
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox" id="sag-harbor-area">SAG HARBOR AREA
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-sag">North Haven
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-sag">Noyac
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-sag">Sag Harbor
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-sag">Shelter Island
+							    </label>
+							  </div> 
+						</div>
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox" id="southampton-area">SOUTHAMPTON AREA
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-south">Hampton Bays
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-south">Southampton
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-south">Southampton Village
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-south">Water Mill
+							    </label>
+							  </div>		 
+						</div>
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox" id="westhampton-area">WESTHAMPTON AREA
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-west">East Quogue
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-west">Quiogue
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-west">Quogue
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-west">Remsenberg
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-west">Westhampton
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-west">Westhampton Beach
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-west">Westhampton Dunes
+							    </label>
+							  </div>		 
+						</div>
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox" id="north-fork">NORTH FORK
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-north">Riverhead Area
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-north">Cutchogue Area
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-north">Southold Area
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-north">Greenport Area
+							    </label>
+							  </div>		 
+						</div>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- second collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm2">
+			  <div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading panel-heading-nn-collpse">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm2" href="#collapse2">
+			          Home Details
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse2" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			        <div class="row">
+			      		<div class="col-sm-3 accordian-text"> 
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2"> Rental Period(s):</label>
+							    <label class="town-text2">
+							      <input type="checkbox" name="all">All
+							    </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox" id="summer_period">Summer Periods
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-summer">Memorial Day - Labor Day
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-summer">June Only
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-summer">July Only
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-summer">August Only
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-summer">June/July
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" class="chk-bx-summer">July/August
+							    </label>
+							  </div>		 
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox">Short Term / Weekly
+							    </label>
+							  </div>		 
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox">Yearly
+							    </label>
+							  </div>		 
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+							<div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox">Winter Only
+							    </label>
+							  </div>		 
+						</div>
+			      	</div>
+			      	
+			      	<div class="row">
+			      		<div class="col-sm-3 accordian-text">
+			      			<div class="coustom-checkbox">
+							    <label class="town-text2"> Price From: </label>
+							    <input type="text" name="pricrefrom" class="inline_textbox"/>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Acreage: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>	
+			      		</div>
+			      		
+			      		<div class="col-sm-3 accordian-text">
+			      			<div class="coustom-checkbox">
+							    <label class="town-text2"> Price To: </label>
+							    <input type="text" name="pricreto" class="inline_textbox"/>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Waterfront/View: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>	
+			      		</div>
+			      		
+			      		<div class="col-sm-3 accordian-text">
+			      			<div class="coustom-checkbox">
+							    <label class="town-text2"> Beds: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="checkbox coustom-checkbox">
+							    <label class="town-text2"> 
+							      <input type="checkbox">South of Highway:
+							    </label>
+							  </div>
+			      		</div>
+			      		
+			      		<div class="col-sm-3 accordian-text">
+			      			<div class="coustom-checkbox">
+							    <label class="town-text2"> Baths: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Pool: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+			      		</div>
+			      		
+			      		<div class="col-sm-3 accordian-text">
+			      			<div class="coustom-checkbox">
+							    <label class="town-text2"> Sf: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Tennis: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+			      		</div>
+			      	</div>
+			      	
+			      	<div class="form-group">
+			      		<label class="col-sm-3 control-label-cust">Keywords</label>
+			      		<div class="col-sm-5">
+			      			<textarea class="form-control" rows="3"></textarea>
+			      		</div>
+			      	</div>
+			      	
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- third collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm3">
+			  <div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading panel-heading-nn-collpse">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm3" href="#collapse3">
+			          Listing Details
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse3" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			      	<div class="row">
+			      		<div class="col-sm-2 accordian-text">
+							<div class="coustom-checkbox">
+							    <label class="town-text2"> Listing Type:</label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="all">All
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="exclusive">Exclusive
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="co-brokes">Co-Brokes
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="open">Open
+							  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+							<div class="coustom-checkbox">
+							    <label class="town-text2"> Status:</label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="active">Active
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="inactive">Inactive
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="sold">Sold
+							    </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+							<div class="coustom-checkbox">
+							    <label class="town-text2"> Co-Broke Agency:</label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Added Since:</label>
+							    <input type="text" name="cobrokeagency" class="inline_textbox clndr-datepick"/>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="price">Price or Status Chages Only
+							    </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+							<div class="coustom-checkbox">
+							    <label class="town-text2"> Listing Agent:</label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Edited Since:</label>
+							    <input type="text" name="cobrokeagency" class="inline_textbox clndr-datepick"/>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="sign_posted">Sign Posted
+							    </label>
+							  </div>
+						</div>
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- fourth collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm4">
+			  <div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm4" href="#collapse4">
+			          General Details
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse4" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			      	<div class="row">
+			      		<div class="col-sm-3 accordian-text">
+						  <div class="coustom-checkbox">
+							    <label class="town-text2"> Property Type:</label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="disable_access">Disabled Access/Features
+							    </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+			      			<div class="coustom-checkbox">
+							    <label class="town-text2"> Development: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="coustom-checkbox">
+							    <label class="town-text2"> Age of Home: </label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+			      		</div>
+						
+						<div class="col-sm-3 accordian-text">
+						  <div class="coustom-checkbox">
+							    <label class="town-text2"> Stories:</label>
+							    <select class="town-text2">
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    	<option>Lorem Ipsum</option>
+							    </select>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="green_efficient">Green/Energy Efficient
+							    </label>
+							  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Docking Rights
+						    </label>
+						  </div>
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="central_air">Central Air
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="near_transportation">Near Transportation
+						    </label>
+						  </div>
+						  <div class="coustom-checkbox">
+						    <label class="town-text2"> Heat Type:</label>
+						    <select class="town-text2">
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    </select>
+						  </div>
+						</div>
+						
+			      	</div>
+			      	
+			      	<div class="row">
+			      		<h4 class="col-sm-12 sub-heading"> House Style</h4>
+			      		<div class="col-sm-2 accordian-text">
+			      			<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Adirondack
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">A-Frame
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">American prairie
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Apartment
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Arts & Crafts
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Barn
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Beach Cottage
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Beach House
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Beaux Arts
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Bed & Breakfast
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Boat House
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Bungalow
+							    </label>
+						  	</div>
+			      		</div>
+			      		
+			      		<div class="col-sm-2 accordian-text">
+			      			<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Cabin
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Camp
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Cape
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Carriage House
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Chalet
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Chateau
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Colonial
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Colonial revival
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Compound
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Condo / Co-Op
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Contemporary
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Cottage
+							    </label>
+						  	</div>
+			      		</div>
+			      		
+			      		<div class="col-sm-2 accordian-text">
+			      			<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Craftsman
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Dutch Colonial
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">English / Country
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Estate / Mansion
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">European Villa
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Farm / Farmhouse
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Federal
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">French
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Gambrel
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Georgian
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Gothic
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Greek Revival
+							    </label>
+						  	</div>
+			      		</div>
+			      		
+			      		<div class="col-sm-2 accordian-text">
+			      			<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">H Style
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">High Ranch
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Historic
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Ice House
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Lodge
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Log Cabin
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Mansard
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Mediterranean
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Modern
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Nantucket
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Neoclassical
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Neoeclectic
+							    </label>
+						  	</div>
+			      		</div>
+			      		
+			      		<div class="col-sm-2 accordian-text">
+			      			<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Pagoda
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Post & Beam
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Post Modern
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Raised Ranch
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Ranch
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Renaissance Revival
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Saltbox
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">School House
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Shingle Style
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Spanish Revival
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Split Level
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Townhouse
+							    </label>
+						  	</div>
+			      		</div>
+			      		
+			      		<div class="col-sm-2 accordian-text">
+			      			<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Traditional
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Tudor
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Tuscan
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Upside Down
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Victorian
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Victorian Italianate
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Villa
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Whaling House
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Windmill House
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">Zig-Zag
+							    </label>
+						  	</div>
+						  	<div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox">OTHER
+							    </label>
+						  	</div>
+			      		</div>
+			      	</div>
+			      	
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- fifth collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm5">
+			  <div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+			          Interior Details
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse5" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			      	 <div class="row">
+			      		<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">First Floor Master
+						    </label>
+						  </div>
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="driveway">Laundry Room
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Furnished
+						    </label>
+						  </div>
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="driveway">Staff Quarters
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Hardwood Floors
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Basement
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Finished Basement
+						    </label>
+						  </div>
+						</div>
+						
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- sixth collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm6">
+			  <div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+			          Exterior Details
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse6" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			      	 <div class="row">
+			      		<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Garage
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Outdoor Shower
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Hot Tub / Spa
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Pool House/Guest House
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Sprinkler System
+						    </label>
+						  </div>
+						</div>
+						
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- seventh collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm7">
+				<div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+			          Community Details
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse7" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			      	 <div class="row">
+			      		<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Gated
+						    </label>
+						  </div>
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="driveway">Beach Access
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Community Pool
+						    </label>
+						  </div>
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="driveway">Docking Rights
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Commuity Tennis
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Clubhouse
+						    </label>
+						  </div>
+						</div>
+						
+						<div class="col-sm-2 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Golf
+						    </label>
+						  </div>
+						</div>
+						
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<!-- eighth collapsible -->
+			
+			<div class="panel-group" id="myCollapsiblecomm8">
+			  <div class="panel panel-default panel-custom-fl-srch">
+			    <div class="panel-heading panel-heading-nn-collpse">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#myCollapsiblecomm5" href="#collapse8">
+			          Options
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapse8" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			        <div class="row">
+			      		<div class="col-sm-3 accordian-text">
+						  <div class="coustom-checkbox">
+						    <label class="town-text2"> Sort By:</label>
+						    <select class="town-text2">
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    	<option>Lorem Ipsum</option>
+						    </select>
+						  </div>
+						</div>
+						
+						<div class="col-sm-3 accordian-text">
+						  <div class="checkbox coustom-checkbox checkbox-indent">
+						    <label class="town-text2">
+						      <input type="checkbox" name="private_community">Save This Search
+						    </label>
+						  </div>
+						</div>
+						<div class="col-sm-3 accordian-text">
+							<div class="coustom-checkbox">
+							    <label class="town-text2"> Result Type:</label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="all">Thumbnail
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="exclusive">List
+							    </label>
+							  </div>
+							  <div class="checkbox coustom-checkbox checkbox-indent">
+							    <label class="town-text2">
+							      <input type="checkbox" name="co-brokes">Full Listing
+							    </label>
+							  </div>
+						</div>
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12 col-xs-12">
+					<p class="copyright">© 2014 Hamptons Real Time, LLC. 365 County Road 39, Southampton, NY 11968. 631-287-8666. info@hamptonsrealtimes.com</p>
+				</div>
+			</div>
+		</div>
+		
+	
+		
+		
+		
+		
+		
+		
+		<!-- link js -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="js/custom.js"></script>
+		
+	</body>
+</html>
