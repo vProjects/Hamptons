@@ -111,7 +111,7 @@ $(document).ready(function(){
 	  }
 	 });
 	 
-	 // change content of town area collapsible on click
+	 // change content of town area collapsible on click on public page 
 		$('.SeeMore2').click(function(){
 			var $this = $(this);
 			$this.toggleClass('SeeMore2');
@@ -122,6 +122,17 @@ $(document).ready(function(){
 			}
 		});
 		
+	// toggle the + and - sign of collapsible on click on agent admin page
+		$('.tgle-sgn-collps-admin').click(function(){
+			var $this = $(this);
+			var $thisspn = $(this).children();
+			$this.toggleClass('tgle-sgn-collps-admin');
+			if($this.hasClass('tgle-sgn-collps-admin')){
+				$thisspn.text('-');			
+			} else {
+				$thisspn.text('+');
+			}
+		});
 		
 		//same  height coloumns
 		

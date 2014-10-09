@@ -1055,6 +1055,24 @@ input:-ms-input-placeholder {
 	color: #111;
 }
 
+li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.srch-btn{
+	width: 180px;
+	margin: 0 auto;
+	padding: 0.5% 3% 0% 3%;
+	background-color: #142d54;
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+
+.srch-btn:hover{
+	background-color: #142D54;
+	color: #FFFFFF;
+}
+
 /* media queries */
 
 @media(min-width: 992px) and (max-width: 1200px){
