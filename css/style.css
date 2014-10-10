@@ -1073,6 +1073,21 @@ li.dropdown:hover > ul.dropdown-menu {
 	color: #FFFFFF;
 }
 
+.dashboard-menu>li.dropdown{
+	list-style-type: none;
+}
+
+.panel-custom-fl-srch>.panel-heading>.panel-title>a>span{
+	background-color: #FFFFFF;
+	width: 17px;
+	height: 17px;
+	text-align: center;
+	color: #000000;
+	display: inline-block;
+	border-radius: 50%;
+	font-size: 0.9em;
+}
+
 /* media queries */
 
 @media(min-width: 992px) and (max-width: 1200px){
