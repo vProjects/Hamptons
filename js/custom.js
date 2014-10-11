@@ -155,4 +155,6 @@ $(document).ready(function(){
 		
 		$('.clndr-datepick').datepicker();
 		
+		$('.dropdown-toggle').dropdownHover();
+		
 });

@@ -1055,10 +1055,6 @@ input:-ms-input-placeholder {
 	color: #111;
 }
 
-li.dropdown:hover > ul.dropdown-menu {
-    display: block;
-}
-
 .srch-btn{
 	width: 180px;
 	margin: 0 auto;
@@ -1087,7 +1083,13 @@ li.dropdown:hover > ul.dropdown-menu {
 	border-radius: 50%;
 	font-size: 0.9em;
 }
-
+#myCollapsiblecomm1 span {
+ width: 100px;
+ height: 100%;
+ background: none;
+ color: #fff;
+ text-align: left;
+}
 /* media queries */
 
 @media(min-width: 992px) and (max-width: 1200px){
