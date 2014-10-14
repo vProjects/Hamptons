@@ -812,6 +812,53 @@ div.brand-txt>p>span{
 .padding-bottom {
 	padding-bottom: 15px;
 }
+.text-color {
+	color: #142d54;
+}
+.underline {
+	text-decoration: underline;
+}
+.float-right {
+	float: right; 
+}
+.float-left {
+	float: left; 
+}
+.border-bottom {
+	border-bottom: 1px solid black;
+}
+.body-menu {
+	width: 100%;
+	background-color: #142d54;
+	margin-right: 6px;
+	margin-top: 12px;
+	text-align: center !important;
+}
+.border-right {
+	border-right: 1px solid black;
+}	
+.border-top {
+	border-top: 1px solid black;
+}
+.padding-left-disable {
+	padding-left: initial;
+}
+.transparent {
+	background: transparent;
+}
+.padding-right-disable {
+	padding-right: initial;
+}
+.button-color {
+	background-color: #142d54;
+	color: white;
+}
+.text-center {
+	text-align: center;
+}
+.margin-bottom-disable {
+	margin-bottom: initial;
+}
 .home-menu {
 	background-color: #142d54;
 	padding: 10px 5px 1px 5px;
