@@ -817,6 +817,10 @@ div.brand-txt>p>span{
 }
 .underline {
 	text-decoration: underline;
+	cursor: pointer;
+}
+a {
+	cursor: pointer;
 }
 .float-right {
 	float: right; 
